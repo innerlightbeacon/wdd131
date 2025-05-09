@@ -19,12 +19,17 @@
     text-align: center;
   }
   
-  nav {
+  nav ul {
     display: flex;
-    justify-content: center; /* aligns links horizontally in the center */
-    gap: 1rem;                /* spacing between links */
-    background-color: #f0f0f0;
-    padding: 1rem;
+    justify-content: center; /* Centers the links horizontally */
+    gap: 1rem; /* Adds space between links */
+    list-style: none; /* Removes the default list bullets */
+    padding: 0; /* Removes any default padding */
+    margin: 0; /* Removes any default margin */
+  }
+  
+  nav li {
+    /* You can add styles here for each list item if needed */
   }
   
   nav a {
@@ -40,6 +45,7 @@
     border-radius: 5px;
   }
   
+
   main {
     width: 1200px;  /* Set a fixed width */
     margin: 0 auto; /* Horizontally center the element */
