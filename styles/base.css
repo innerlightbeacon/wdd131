@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    padding: 16px;
+  }
+  
+  header, footer {
+    background-color: #004466;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: center; /* aligns links horizontally in the center */
+    gap: 1rem;                /* spacing between links */
+    background-color: #f0f0f0;
+    padding: 1rem;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #333;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s, background-color 0.3s;
+  }
+  
+  nav a:hover {
+    color: white;
+    background-color: #004466;
+    border-radius: 5px;
+  }
+  
+  main {
+    width: 1200px;  /* Set a fixed width */
+    margin: 0 auto; /* Horizontally center the element */
+    padding: 20px;  /* Optional padding for content */
+  }
+  
+  .card {
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Layout the cards using CSS Grid */
+main {
+    display: grid;
+    grid-template-columns: 1fr; /* Single column by default */
+    gap: 1rem; /* Space between cards */
+    max-width: 1200px; /* Keeps your fixed width */
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Responsive layout: 2 columns on wider screens */
+  @media (min-width: 768px) {
+    main {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
