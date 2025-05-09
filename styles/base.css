@@ -29,7 +29,8 @@
   }
   
   nav li {
-    /* You can add styles here for each list item if needed */
+    display: inline-block; /* Makes the list items appear horizontally */
+    padding: 5px;/* You can add styles here for each list item if needed */
   }
   
   nav a {
@@ -45,7 +46,6 @@
     border-radius: 5px;
   }
   
-
   main {
     width: 1200px;  /* Set a fixed width */
     margin: 0 auto; /* Horizontally center the element */
