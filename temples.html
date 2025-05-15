@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Temples</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- CSS Files -->
+  <link rel="stylesheet" href="styles/temples.css" />
+  <link rel="stylesheet" href="styles/temples-large.css" />
+
+  <!-- JS File -->
+  <script src="scripts/temples.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Temple Album</h1>
+    <!-- Hamburger button for mobile -->
+    <button
+      id="hamburger"
+      aria-label="Toggle navigation menu"
+      aria-expanded="false"
+      aria-controls="nav-menu"
+      type="button"
+    >
+      &#9776;
+    </button>
+
+    <nav id="nav-menu">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#old">Old</a></li>
+        <li><a href="#new">New</a></li>
+        <li><a href="#large">Large</a></li>
+        <li><a href="#small">Small</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="gallery-title">Home</div>
+
+    <figure>
+      <img src="images/temple1.jpg" alt="Salt Lake Temple" />
+      <figcaption>Salt Lake Temple</figcaption>
+    </figure>
+
+    <figure>
+      <img src="images/temple2.jpg" alt="Palmyra Temple" />
+      <figcaption>Palmyra Temple</figcaption>
+    </figure>
+
+    <figure>
+      <img src="images/temple3.jpg" alt="Los Angeles Temple" />
+      <figcaption>Los Angeles Temple</figcaption>
+    </figure>
+
+    <figure>
+      <img src="images/temple4.jpg" alt="San Diego Temple" />
+      <figcaption>San Diego Temple</figcaption>
+    </figure>
+
+    <figure>
+      <img src="images/temple5.jpg" alt="Provo Temple" />
+      <figcaption>Provo Temple</figcaption>
+    </figure>
+
+    <figure>
+      <img src="images/temple6.jpg" alt="Palmyra New York Temple" />
+      <figcaption>Palmyra New York Temple</figcaption>
+    </figure>
+
+    <figure>
+      <img src="images/temple7.jpg" alt="Washington D.C. Temple" />
+      <figcaption>Washington D.C. Temple</figcaption>
+    </figure>
+
+    <figure>
+      <img src="images/accra-temple.jpg" alt="Accra Ghana Temple" />
+      <figcaption>Accra Ghana Temple</figcaption>
+    </figure>
+
+    <figure>
+      <img src="images/temple9.jpg" alt="Vancouver Temple" />
+      <figcaption>Vancouver Temple</figcaption>
+    </figure>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Jackson Osei Kumi</p>
+  </footer>
+</body>
+</html>
