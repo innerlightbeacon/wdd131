@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ghana</title>
+  <link rel="stylesheet" href="styles/place.css" />
+  <script src="scripts/place.js" defer></script>
+</head>
+<body>
+
+  <header>
+    <h1>Explore Ghana</h1>
+  </header>
+
+  <div class="banner">
+    <h2>Welcome to Ghana</h2>
+  </div>
+
+  <picture class="hero">
+    <source srcset="images/hero-place-large.webp" media="(min-width: 901px)" />
+    <source srcset="images/hero-place-medium.webp" media="(min-width: 601px)" />
+    <img src="images/hero-place-small.webp" alt="Scenic view of Ghana" width="100%" height="auto" />
+  </picture>
+
+  <main>
+    <h2 class="main-title">About Ghana</h2>
+
+    <article>
+      <p>
+        Ghana, located in West Africa, is known for its rich cultural heritage, vibrant traditions,
+        and warm hospitality. From the bustling markets of Accra to the serene landscapes of the Volta Region,
+        the country offers a blend of modernity and deep-rooted traditions.
+      </p>
+      <div class="callout">
+        Did you know? Ghana was the first sub-Saharan African country to gain independence in 1957!
+      </div>
+    </article>
+
+    <section class="info-list">
+      <h3>Top Attractions</h3>
+      <ul>
+        <li>Kwame Nkrumah Mausoleum</li>
+        <li>Cape Coast Castle</li>
+        <li>Kakum National Park</li>
+        <li>Lake Volta</li>
+        <li>Wli Waterfalls</li>
+      </ul>
+    </section>
+
+    <section class="weather">
+      <h3>Weather</h3>
+      <img src="images/weather-icon.svg" alt="Weather Icon" class="mobile-icon" />
+      <p>Currently sunny with occasional clouds.</p>
+      <p>Temperature: <span id="temperature">45</span>°F</p>
+      <p>Wind Speed: <span id="windspeed">5</span> mph</p>
+      <p>Wind Chill: <span id="windchill">Calculating...</span></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentyear"></span> Ghana Page | Created by Jackson Osei Kumi</p>
+    <p>Last Modified: <span id="lastmodified"></span></p>
+  </footer>
+
+</body>
+</html>

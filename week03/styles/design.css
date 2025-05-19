@@ -1,0 +1,55 @@
+body {
+	font-family: Roboto, helvetica, sans-serif;
+}
+
+header,
+main,
+footer {
+	max-width: 760px;
+	margin: 0 auto;
+}
+
+marquee {
+	padding: 1rem;
+	background-color: #eee;
+}
+
+h1 {
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+main {
+	display: grid;
+	grid-template-columns: 1fr 1fr;   /* added: two equal columns */
+	gap: 1rem;                      /* optional: space between columns */
+}
+
+main > h2 {
+	grid-column: 1 / -1;            /* added: h2 spans both columns */
+	text-align: left;
+}
+
+h2 {
+	color: navy;
+	/* text-align: left;  moved into main > h2 for specificity */
+}
+
+article p {
+	text-align: justify;
+}
+
+.callout {
+    color: #aaaaaa;           /* lighter gray text for better contrast */
+    background-color: #3e0032; /* darker purple background */
+    padding: 1rem;
+    border-radius: 4px;
+}
+
+  
+footer {
+	margin-top: 1rem;
+	border-top: 1px solid rgba(0, 0, 0, 0.1);
+	font-size: smaller;
+	text-align: left;  /* changed from right to left */
+}
+
