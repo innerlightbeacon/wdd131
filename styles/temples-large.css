@@ -17,4 +17,8 @@
       grid-template-columns: repeat(3, 1fr); /* 3-column grid */
     }
   }
+  nav a:hover {
+    color: blue;
+    text-decoration: underline;
+  }
   
