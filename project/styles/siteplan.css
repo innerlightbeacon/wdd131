@@ -1,0 +1,40 @@
+/* Import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+/* General Styles */
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #333333;
+  background-color: #fff8f0;
+  margin: 0;
+  padding: 2rem;
+  line-height: 1.6;
+}
+
+/* Headings */
+h1, h2, h3 {
+  font-family: Georgia, serif;
+  color: #b22222;
+}
+
+/* Section Titles */
+section {
+  margin-bottom: 2rem;
+  border-left: 6px solid #ffcc00;
+  padding-left: 1rem;
+}
+
+/* Highlight Special Text (like recipe sections) */
+.code-style {
+  font-family: 'Courier New', monospace;
+  background-color: #ffcc00;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+}
+
+/* Logo (optional placeholder styling) */
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #b22222;
+}
