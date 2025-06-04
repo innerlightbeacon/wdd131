@@ -1,68 +1,97 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background: #f4f4f4;
-    text-align: center;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f4f4f4;
+  text-align: center;
+  color: #333;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+}
+
+nav {
+  margin: 1rem 0;
+}
+
+nav button {
+  margin: 0 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+nav button:hover,
+nav button.active {
+  background-color: blue;
+  color: white;
+  outline: none;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.temple-card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  width: 300px;
+  padding: 1rem;
+  transition: transform 0.3s;
+  text-align: left;
+}
+
+.temple-card:hover {
+  transform: translateY(-5px);
+}
+
+.temple-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  opacity: 0;
+  animation: fadeIn 1s ease forwards;
+  animation-delay: 0.3s;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.temple-card h2 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.25rem;
+  color: #222;
+}
+
+.temple-card p {
+  margin: 0.25rem 0;
+  font-size: 1rem;
+  color: #555;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
   }
-  
-  header {
-    background-color: #333;
-    color: white;
-    padding: 1rem;
-  }
-  
-  nav button {
-    margin: 0.5rem;
-    padding: 0.5rem 1rem;
-    background-color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  nav button:hover,
-  nav button.active {
-    background-color: blue;
-    color: white;
-  }
-  
-  main {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1rem;
-    padding: 2rem;
-  }
-  
-  .temple-card {
-    background: white;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.2);
-    width: 300px;
-    padding: 1rem;
-    transition: transform 0.3s;
-  }
-  
-  .temple-card img {
-    width: 100%;
-    height: auto;
-    border-radius: 6px;
-    opacity: 0;
-    animation: fadeIn 1s ease forwards;
-    animation-delay: 0.3s;
-  }
-  
-  @keyframes fadeIn {
-    to {
-      opacity: 1;
-    }
-  }
-  
-  footer {
-    background-color: #333;
-    color: white;
-    padding: 1rem;
-    font-size: 0.9rem;
-  }
-  
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+  font-size: 0.9rem;
+  text-align: center;
+}

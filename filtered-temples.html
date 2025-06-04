@@ -1,19 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="A filtered album of temples using JavaScript with interactive filters." />
   <meta name="author" content="Jackson Osei Kumi" />
-  <meta name="description" content="A dynamic album of Latter-day Saint temples with filtering options based on size and dedication year." />
   <title>Filtered Temples Album</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../styles/filtered-temples.css" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles/filtered-temples.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+
+  <!-- JavaScript -->
+  <script src="scripts/filtered-temples.js" defer></script>
 </head>
+
 <body>
   <header>
-    <h1>Temples Album</h1>
+    <h1>Temple Album</h1>
     <nav>
-      <button id="home">Home</button>
+      <button id="all">All</button>
       <button id="old">Old</button>
       <button id="new">New</button>
       <button id="large">Large</button>
@@ -21,13 +28,14 @@
     </nav>
   </header>
 
-  <main id="temples"></main>
+  <main>
+    <div id="temples" class="cards"></div>
+  </main>
 
   <footer>
-    <p>&copy; <span id="year"></span> Jackson Osei Kumi </p>
+    <p>&copy; 2025 | Jackson Osei Kumi | WDD131 - Temple Album</p>
     <p>Last Modified: <span id="lastModified"></span></p>
   </footer>
-
-  <script src="../scripts/filtered-temples.js" defer></script>
 </body>
+
 </html>
