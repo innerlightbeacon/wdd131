@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Review Confirmation</title>
+  <link rel="stylesheet" href="styles/form.css" />
+</head>
+<body>
+  <header>
+    <h1>Thank You!</h1>
+  </header>
+
+  <main>
+    <section>
+      <p>Your review has been submitted successfully. </p>
+      <p id="counter-message"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 | Ghana | Jackson Osei Kumi</p>
+  </footer>
+
+  <script>
+    // Increment the review counter
+    const reviewKey = 'reviewCount';
+    let count = Number(localStorage.getItem(reviewKey)) || 0;
+    count += 1;
+    localStorage.setItem(reviewKey, count);
+
+    // Display the count
+    const message = `You have submitted ${count} review${count !== 1 ? 's' : ''}.`;
+    document.getElementById('counter-message').textContent = message;
+  </script>
+</body>
+</html>
